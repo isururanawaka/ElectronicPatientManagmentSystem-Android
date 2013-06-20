@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/backimage" >
+
+        <Button
+            android:id="@+id/addd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="Add Notes" />
+
+        <Button
+            android:id="@+id/viewd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/addd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="View Notes" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/viewd"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15dp"
+            android:text="Age:-"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/named"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="14dp"
+            android:text="Name:-"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/named2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/named"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/named"
+          
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/aged"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/named"
+            android:layout_alignBottom="@+id/named"
+            android:layout_alignLeft="@+id/named2"
+           
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/aged"
+            android:src="@drawable/photo" />
+
+    </RelativeLayout>

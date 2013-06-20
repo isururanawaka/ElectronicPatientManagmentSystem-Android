@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/backimage" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="27dp"
+            android:text="Number Of Patients to Treat:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/patientnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView1"
+            android:layout_toRightOf="@+id/textView1"
+             android:textColor="#000000" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/patientnum"
+            android:layout_marginTop="94dp"
+            android:text="Additional Info:"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+             android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/addinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="49dp"
+            android:inputType="textMultiLine" 
+             android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/sending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addinfo"
+            android:layout_marginTop="68dp"
+            android:layout_toLeftOf="@+id/patientnum"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="Send Message" 
+             android:textColor="#000000"/>
+
+    </RelativeLayout>

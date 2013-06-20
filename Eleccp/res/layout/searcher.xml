@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/backimage" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="122dp"
+            android:text="Enter PID"
+            android:textColor="#000000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            
+             />
+
+        <EditText
+            android:id="@+id/pid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/textView1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/pid"
+            android:layout_marginTop="26dp"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           
+             />
+
+        <EditText
+            android:id="@+id/names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pid"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView2" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/names"
+            android:layout_below="@+id/names"
+            android:layout_marginTop="21dp"
+            android:text="Search" />
+
+    </RelativeLayout>    

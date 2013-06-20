@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="main.com"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.CAMERA" ></uses-permission>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" ></uses-permission>
+<uses-permission android:name="android.permission.RECEIVE_SMS" ></uses-permission>
+<uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+ <uses-feature android:name="android.hardware.camera" />
+ <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".EleccpActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+     <activity
+           android:name=".Login"
+           android:label="@string/app_name" >
+           <intent-filter>
+               <action android:name="main.com.LOGIN" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+<activity
+           android:name=".Action"
+           android:label="@string/app_name" >
+           <intent-filter>
+               <action android:name="main.com.ACTION" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+ 
+       <activity
+           android:name=".Searcher"
+           android:label="@string/app_name" >
+           <intent-filter>
+               <action android:name="main.com.SEARCH" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+  
+        <activity
+           android:name=".Profile"
+           android:label="@string/app_name" >
+           <intent-filter>
+               <action android:name="main.com.PROFILE" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+  
+          <activity
+           android:name=".Detail"
+           android:label="@string/app_name" >
+           <intent-filter>
+               <action android:name="main.com.DETAIL" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+   <activity
+           android:name=".CameraHandling"
+           android:label="@string/app_name" >
+           <intent-filter>
+               <action android:name="main.com.CAMERAACTIVITY" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+  
+  <activity
+           android:name=".NoteAdd"
+           android:label="@string/app_name" >
+           <intent-filter>
+               <action android:name="main.com.NOTEADD" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+       
+  
+  <activity
+           android:name=".NoteViewer"
+           android:label="@string/app_name" >
+           <intent-filter>
+               <action android:name="main.com.VIEWNOTE" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+       <activity
+           android:name=".ListLoader"
+           android:label="@string/app_name" >
+           <intent-filter>
+               <action android:name="main.com.LISTNOTE" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+       <activity
+           android:name=".ManagerProfile"
+           android:label="@string/app_name" >
+           <intent-filter>
+               <action android:name="main.com.MANAGER" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+  <activity
+           android:name=".MessageSender"
+           android:label="@string/app_name" >
+           <intent-filter>
+               <action android:name="main.com.SENDER" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+       
+  <activity
+           android:name=".MangerAccess"
+           android:label="@string/app_name" >
+           <intent-filter>
+               <action android:name="main.com.MANAGERACCESS" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+       <activity
+           android:name=".Photo"
+           android:label="@string/app_name" >
+           <intent-filter>
+               <action android:name="main.com.PHOTO" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+       <activity
+           android:name=".ImageSender"
+           android:label="@string/app_name" >
+           <intent-filter>
+               <action android:name="main.com.IMAGESENDER" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+   <receiver android:name=".SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+
+            </intent-filter>
+
+        </receiver>
+        
+    </application>
+
+</manifest>

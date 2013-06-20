@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/backimage">
+    
+
+<Button
+    android:id="@+id/newprofile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="67dp"
+    android:layout_marginTop="76dp"
+    android:text="Create New Profile" />
+
+<Button
+    android:id="@+id/existingprofile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/newprofile"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/newprofile"
+    android:layout_marginTop="70dp"
+    android:text="View Existing Profile" />
+
+</RelativeLayout>
+
+
